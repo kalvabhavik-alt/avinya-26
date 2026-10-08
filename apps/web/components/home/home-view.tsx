@@ -3,8 +3,11 @@
 import React from "react"
 import { HeroVoyage } from "@/components/hero"
 import { AboutJournal } from "@/components/about"
-import { ThreeWorlds } from "@/components/three-worlds"
-import { EventsPreview } from "@/components/events-preview"
+import {
+  IslandJourney,
+  HorizontalVoyageType,
+  SponsorsHarbor,
+} from "@/components/expedition"
 import { ScheduleVoyage } from "@/components/schedule"
 import { ContactDispatch } from "@/components/contact"
 import { VoyageFooter } from "@/components/footer"
@@ -18,19 +21,22 @@ export function HomeView() {
       {/* 02. The Logbook // About IIIT Dharwad & The Fest */}
       <AboutJournal />
 
-      {/* 03. The Chart // The Three Worlds Archipelago */}
-      <ThreeWorlds />
+      {/* 03. The Expedition // Boat route through the three festival islands */}
+      <IslandJourney />
 
-      {/* 04. The Permits // Featured Expeditions Preview */}
-      <EventsPreview />
+      {/* 04. The Patrons // Sponsors */}
+      <SponsorsHarbor />
 
-      {/* 05. The Itinerary // 3-Day Voyage Route */}
+      {/* 05. The Call // Horizontal scroll typography */}
+      <HorizontalVoyageType />
+
+      {/* 06. The Itinerary // 3-Day Voyage Route */}
       <ScheduleVoyage />
 
-      {/* 06. The Port // Contact & Telegraph Dispatch */}
+      {/* 07. The Port // Contact & Telegraph Dispatch */}
       <ContactDispatch />
 
-      {/* 07. The Anchor // Maritime Editorial Footer */}
+      {/* 08. The Anchor // Maritime Editorial Footer */}
       <VoyageFooter />
     </div>
   )
